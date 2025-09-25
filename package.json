@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ghaithbs.github.io/myportfolio/",
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
