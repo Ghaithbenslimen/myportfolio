@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { HashRouter as Router } from "react-router-dom"
+import { HashRouter as Router } from "react-router-dom" // Add this import
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import Home from "./pages/Home/Home"
@@ -30,7 +30,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router> {/* Wrap everything with HashRouter */}
       <div className="App">
         <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
         <main className="main-content">{renderPage()}</main>
