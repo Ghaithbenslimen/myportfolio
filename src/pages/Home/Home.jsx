@@ -51,7 +51,7 @@ const Home = ({ setCurrentPage }) => {
           <div className="hero-image fade-in">
             <div className="image-placeholder">
               <img
-                src="/505871793_736546905711419_6155978400308814323_n.jpg"
+                src="./505871793_736546905711419_6155978400308814323_n.jpg"
                 alt="Ghaith Ben Slimen - Software Engineer"
                 className="profile-image"
               />

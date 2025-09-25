@@ -13,7 +13,7 @@ const Projects = ({ setCurrentPage }) => { // Add setCurrentPage prop
       title: "Para.tn: AI-Powered Connected Pharmacy",
       description:
         "Final year project to build a smart parapharmacy app offering AI-driven skincare suggestions and full inventory/customer management using Scrumban methodology.",
-      image: "/c1.png",
+      image: "./c1.png",
       technologies: ["Flutter", "React", "Node.js", "Flask", "MongoDB"],
       category: ["fullstack", "web","mobile","backend"],
       demoUrl: "https://drive.google.com/file/d/1lFNU5S9ucNHRPiQyISb-YMc3dQeC1PgY/view?usp=drive_link",
@@ -25,7 +25,7 @@ const Projects = ({ setCurrentPage }) => { // Add setCurrentPage prop
       title: "MEGATEL Mobile App",
       description:
         "Mobile app for MEGATEL call center to optimize employee time management, scheduling, and performance tracking. Features clean, intuitive UI for seamless user experience.",
-      image: "/8fbd65e5-c1cf-4f88-a4e0-cb3fc44c6316-cover.png",
+      image: "./8fbd65e5-c1cf-4f88-a4e0-cb3fc44c6316-cover.png",
       technologies: ["Flutter", "Dart", "Firebase"],
       category: "mobile",
       demoUrl: "#",
@@ -50,7 +50,7 @@ const Projects = ({ setCurrentPage }) => { // Add setCurrentPage prop
       title: "Video Editing Portfolio",
       description:
         "Professional video editing work for GNG ESPORTS, creating high-quality content with optimized visuals and smooth transitions.",
-      image: "/517496686_779235844669259_7660317124170242804_n.jpg",
+      image: "./517496686_779235844669259_7660317124170242804_n.jpg",
       technologies: ["After Effects", "Premier Pro", "Photoshop"],
       category: "Videos",
       demoUrl: "#",
