@@ -1,13 +1,14 @@
 "use client"
 
 import { useState } from "react"
+import { HashRouter as Router } from "react-router-dom"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
-import PortfolioPage from "./pages/PortfolioPage/PortfolioPage" // Add this import
+import PortfolioPage from "./pages/PortfolioPage/PortfolioPage"
 import "./App.css"
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         return <Projects setCurrentPage={setCurrentPage} />
       case "contact":
         return <Contact setCurrentPage={setCurrentPage} />
-      case "portfolio-design": // Add this case
+      case "portfolio-design":
         return <PortfolioPage setCurrentPage={setCurrentPage} />
       default:
         return <Home setCurrentPage={setCurrentPage} />
@@ -29,11 +30,13 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <main className="main-content">{renderPage()}</main>
-      <Footer setCurrentPage={setCurrentPage} />
-    </div>
+    <Router>
+      <div className="App">
+        <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        <main className="main-content">{renderPage()}</main>
+        <Footer setCurrentPage={setCurrentPage} />
+      </div>
+    </Router>
   )
 }
 
