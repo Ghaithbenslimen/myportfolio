@@ -33,7 +33,7 @@ const Footer = ({ setCurrentPage }) => {
     setIsChatOpen(!isChatOpen)
     if (!isChatOpen && messages.length === 0) {
       setMessages([{
-        text: "Hello! I'm your AI assistant powered by Gemini. How can I help you today?",
+        text: "Hello! I'm your AI assistant. How can I help you today?",
         sender: "bot"
       }])
     }
@@ -205,7 +205,7 @@ const Footer = ({ setCurrentPage }) => {
       {/* Chatbot UI */}
       <div className={`chatbot-container ${isChatOpen ? 'open' : ''}`}>
         <div className="chatbot-header" onClick={toggleChat}>
-          <h3>AI Assistant (Gemini)</h3>
+          <h3>AI Assistant</h3>
           <span className="chatbot-toggle">
             {isChatOpen ? '×' : '💬'}
           </span>
