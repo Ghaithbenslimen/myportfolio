@@ -13,9 +13,10 @@ const Footer = ({ setCurrentPage }) => {
   // ✅ FIXED: Use REACT_APP_ prefix for Create React App
   const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_API_KEY
   const GEMINI_API_URL = GEMINI_API_KEY 
-    ? `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`
+    ? `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`
     : null
 
+    
   // Debug to check if environment variable is loading
   useEffect(() => {
     console.log('Environment variable check:')
