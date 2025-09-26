@@ -60,7 +60,7 @@ const About = () => {
                 </p>
               </div>
               <div className="about-image fade-in">
-                <img src="/people-working-as-team-company_23-2149136891.avif" alt="Developer workspace" className="workspace-image" />
+                <img src="./people-working-as-team-company_23-2149136891.avif" alt="Developer workspace" className="workspace-image" />
               </div>
             </div>
           </div>
